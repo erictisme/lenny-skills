@@ -87,7 +87,7 @@
     "id": "skill-seo-content",
     "goal": "Generate a theme-based coaching journey skill for SEO & CONTENT GROWTH. Search content/index.json for: seo, content marketing, content-driven, organic growth, content strategy. This is a smaller set (~7 articles) so read ALL of them carefully. Extract key frameworks. Design a 4-6 module coaching journey. Write to skills/lenny-seo-content.md following the skill template in CLAUDE.md. Cross-reference articles, use their own language, cite authors/guests.",
     "exit_criteria": "skills/lenny-seo-content.md exists with: ## The Curriculum (4+ ordered modules with source filenames), ## Key Frameworks Cheat Sheet (4+ real frameworks), ## Source Articles (5+ real filenames), ## Coaching Session Instructions with specific Opening question and mcp__lennysdata__read_content calls.",
-    "passes": false
+    "passes": true
   },
   {
     "id": "skill-consumer-business",
