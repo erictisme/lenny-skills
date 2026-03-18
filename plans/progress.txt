@@ -3,3 +3,4 @@ skill-marketplace: Generated skills/lenny-marketplace.md — 6-module coaching j
 skill-pricing: Generated skills/lenny-pricing.md — 6-module coaching journey from 17 articles (3 podcasts, 14 newsletters). 37 frameworks extracted.
 skill-retention: Generated skills/lenny-retention.md — 6-module coaching journey from 17 articles (7 podcasts, 10 newsletters). 12 frameworks extracted.
 skill-growth-loops: Generated skills/lenny-growth-loops.md — 6-module coaching journey from 12 articles (4 podcasts, 8 newsletters). 25 frameworks extracted.
+skill-product-market-fit: Generated skills/lenny-product-market-fit.md — 6-module coaching journey from 9 articles (2 podcasts, 7 newsletters). 16 frameworks extracted.

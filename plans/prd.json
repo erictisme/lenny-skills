@@ -27,7 +27,7 @@
     "id": "skill-product-market-fit",
     "goal": "Generate a theme-based coaching journey skill for PRODUCT-MARKET FIT. Search content/index.json for: product-market fit, pmf, market fit. This is a smaller set (~6 articles) so read ALL of them carefully. Extract key frameworks. Design a 4-6 module coaching journey. Write to skills/lenny-product-market-fit.md following the skill template in CLAUDE.md. Cross-reference articles, use their own language, cite authors/guests.",
     "exit_criteria": "skills/lenny-product-market-fit.md exists with: ## The Curriculum (4+ ordered modules with source filenames), ## Key Frameworks Cheat Sheet (4+ real frameworks), ## Source Articles (5+ real filenames), ## Coaching Session Instructions with specific Opening question and mcp__lennysdata__read_content calls.",
-    "passes": false
+    "passes": true
   },
   {
     "id": "skill-metrics",
