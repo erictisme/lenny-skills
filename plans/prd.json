@@ -3,7 +3,7 @@
     "id": "skill-marketplace",
     "goal": "Generate a theme-based coaching journey skill for MARKETPLACE. Search content/index.json for articles matching keywords: marketplace, supply and demand, chicken-and-egg, two-sided, take-rate. Read ALL matching articles from content/newsletters/ and content/podcasts/. Extract key frameworks across ALL of them. Design a 5-7 module coaching journey where concepts build on each other. Write the skill to skills/lenny-marketplace.md following the skill template in CLAUDE.md. The skill must use mcp__lennysdata tools at runtime to load articles. Cross-reference articles — find the THREAD that connects them, don't just summarize each separately. Use the articles' own language and cite authors/guests by name.",
     "exit_criteria": "skills/lenny-marketplace.md exists with: ## The Curriculum (4+ ordered modules with source article filenames), ## Key Frameworks Cheat Sheet (5+ real frameworks from the articles), ## Source Articles (10+ real filenames from content/), ## Coaching Session Instructions with specific Opening question, per-concept flow using mcp__lennysdata__read_content, and Closing steps. Best For line is specific (not generic).",
-    "passes": false
+    "passes": true
   },
   {
     "id": "skill-pricing",
