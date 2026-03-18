@@ -16,7 +16,7 @@ TARGET_DIR="$HOME/.claude/commands"
 
 echo ""
 echo -e "${BOLD}Lenny Skills Installer${NC}"
-echo -e "${DIM}18 coaching journey skills powered by Lenny Rachitsky's archive${NC}"
+echo -e "${DIM}19 skills (18 coaching journeys + 1 per-article learning tool) powered by Lenny Rachitsky's archive${NC}"
 echo ""
 
 # Count skills

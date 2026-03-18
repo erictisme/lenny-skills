@@ -1,19 +1,2 @@
-# Ralph DEFAULT run Wed Mar 18 12:04:21 +08 2026
-skill-marketplace: Generated skills/lenny-marketplace.md — 6-module coaching journey from 24 articles (5 podcasts, 19 newsletters). 27 frameworks extracted.
-skill-pricing: Generated skills/lenny-pricing.md — 6-module coaching journey from 17 articles (3 podcasts, 14 newsletters). 37 frameworks extracted.
-skill-retention: Generated skills/lenny-retention.md — 6-module coaching journey from 17 articles (7 podcasts, 10 newsletters). 12 frameworks extracted.
-skill-growth-loops: Generated skills/lenny-growth-loops.md — 6-module coaching journey from 12 articles (4 podcasts, 8 newsletters). 25 frameworks extracted.
-skill-product-market-fit: Generated skills/lenny-product-market-fit.md — 6-module coaching journey from 9 articles (2 podcasts, 7 newsletters). 16 frameworks extracted.
-skill-metrics: Generated skills/lenny-metrics.md — 7-module coaching journey from 16 articles (4 podcasts, 12 newsletters). 11 frameworks extracted.
-skill-founder-journey: Generated skills/lenny-founder-journey.md — 7-module coaching journey from 13 articles (5 podcasts, 8 newsletters). 15 frameworks extracted.
-skill-hiring: Generated skills/lenny-hiring.md — 7-module coaching journey from 18 articles (5 podcasts, 13 newsletters). 11 frameworks extracted.
-skill-career: Generated skills/lenny-career.md — 7-module coaching journey from 29 articles (18 podcasts, 11 newsletters). 13 frameworks extracted.
-skill-leadership: Generated skills/lenny-leadership.md — 7-module coaching journey from 35 articles. 15 frameworks extracted.
-skill-product-strategy: Generated skills/lenny-product-strategy.md — 7-module coaching journey from 30 articles. 11 frameworks extracted.
-skill-ai-products: Generated skills/lenny-ai-products.md — 6-module coaching journey from 20 articles (11 podcasts, 9 newsletters). 13 frameworks extracted.
-skill-b2b-sales: Generated skills/lenny-b2b-sales.md — 7-module coaching journey from 33 articles. 16 frameworks extracted.
-skill-user-research: Generated skills/lenny-user-research.md — 6-module coaching journey from 7 articles. 8 frameworks extracted.
-skill-seo-content: Generated skills/lenny-seo-content.md — 6-module coaching journey from 7 articles. 7 frameworks extracted.
-skill-consumer-business: Generated skills/lenny-consumer-business.md — 7-module coaching journey from 10 articles. 8 frameworks extracted.
-skill-onboarding: Generated skills/lenny-onboarding.md — 6-module coaching journey from 12 articles (5 podcasts, 7 newsletters). 12 frameworks extracted.
-skill-negotiation-comms: Generated skills/lenny-negotiation-comms.md — 5-module coaching journey from 14 articles (5 podcasts, 9 newsletters). 12 frameworks extracted.
+# Ralph DEFAULT run Wed Mar 18 23:45:12 +08 2026
+Task 1-3: Created lenny-learn.md skill (per-article Socratic tutoring). Updated install.sh count to 19. Updated README with new skill at top of table + How It Works note.

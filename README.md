@@ -1,6 +1,6 @@
 # Lenny Skills
 
-18 coaching journey skills for any AI coding tool, powered by [Lenny Rachitsky's](https://www.lennysnewsletter.com/) archive of 638 newsletters and podcast interviews.
+19 skills (18 coaching journeys + 1 per-article learning tool) for any AI coding tool, powered by [Lenny Rachitsky's](https://www.lennysnewsletter.com/) archive of 638 newsletters and podcast interviews.
 
 Each skill turns a theme (like pricing, retention, or hiring) into a structured 1-on-1 coaching session. Instead of reading 15 articles and hoping you connect the dots, the skill walks you through the key concepts in order, checks your understanding, and applies everything to your specific situation.
 
@@ -23,10 +23,11 @@ That's it. The installer shows you what's being installed, asks you to confirm, 
 2. Paste any skill file's content as a prompt or custom instruction
 3. The skill guides the session — it's just markdown
 
-## The 18 Skills
+## The 19 Skills
 
 | Skill | What You'll Learn | Best For |
 |-------|------------------|----------|
+| `/lenny-learn` | Deep-dive into any single article with guided tutoring | Anyone exploring Lenny's archive |
 | `/lenny-marketplace` | Building and scaling two-sided marketplaces | Founders solving chicken-and-egg problems |
 | `/lenny-pricing` | Pricing strategy, monetization, freemium | PMs setting or changing pricing |
 | `/lenny-retention` | Retention, churn, activation, engagement | Growth teams fighting churn |
@@ -48,7 +49,9 @@ That's it. The installer shows you what's being installed, asks you to confirm, 
 
 ## How It Works
 
-Each skill runs an interactive coaching session:
+`/lenny-learn` works differently from the 18 theme skills — instead of following a fixed curriculum, it takes any single article as input, extracts 3-5 key concepts, and runs a Socratic tutoring session on that one piece.
+
+The 18 theme skills each run an interactive coaching session:
 
 1. **Overview** — What you're learning and why it matters
 2. **Context** — The skill asks about YOUR specific situation
