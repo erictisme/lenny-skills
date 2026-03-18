@@ -63,7 +63,7 @@
     "id": "skill-product-strategy",
     "goal": "Generate a theme-based coaching journey skill for PRODUCT STRATEGY. Search content/index.json for: roadmap, prioritization, strategy, vision, big bet, product sense, product thinking. Read ALL matching articles. Extract key frameworks. Design a 6-8 module coaching journey (this is the largest theme). Write to skills/lenny-product-strategy.md following the skill template in CLAUDE.md. Cross-reference articles, use their own language, cite authors/guests.",
     "exit_criteria": "skills/lenny-product-strategy.md exists with: ## The Curriculum (5+ ordered modules with source filenames), ## Key Frameworks Cheat Sheet (5+ real frameworks), ## Source Articles (20+ real filenames), ## Coaching Session Instructions with specific Opening question and mcp__lennysdata__read_content calls.",
-    "passes": false
+    "passes": true
   },
   {
     "id": "skill-ai-products",
