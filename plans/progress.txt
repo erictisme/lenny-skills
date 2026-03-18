@@ -1,2 +1,0 @@
-# Ralph DEFAULT run Wed Mar 18 23:45:12 +08 2026
-Task 1-3: Created lenny-learn.md skill (per-article Socratic tutoring). Updated install.sh count to 19. Updated README with new skill at top of table + How It Works note.
