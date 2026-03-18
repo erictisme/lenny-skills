@@ -1,0 +1,12 @@
+# Source content (not published — used locally by Ralph for skill generation)
+content/
+
+# OS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Build artifacts
+plans/progress.txt
