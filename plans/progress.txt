@@ -1,2 +1,3 @@
 # Ralph DEFAULT run Wed Mar 18 12:04:21 +08 2026
 skill-marketplace: Generated skills/lenny-marketplace.md — 6-module coaching journey from 24 articles (5 podcasts, 19 newsletters). 27 frameworks extracted.
+skill-pricing: Generated skills/lenny-pricing.md — 6-module coaching journey from 17 articles (3 podcasts, 14 newsletters). 37 frameworks extracted.

@@ -9,7 +9,7 @@
     "id": "skill-pricing",
     "goal": "Generate a theme-based coaching journey skill for PRICING. Search content/index.json for articles matching: pricing, price, monetize, willingness-to-pay, take-rate, freemium, revenue model. Read ALL matching articles. Extract key frameworks. Design a 5-7 module coaching journey. Write to skills/lenny-pricing.md following the skill template in CLAUDE.md. Cross-reference articles to find the thread. Use articles' own language, cite authors/guests by name.",
     "exit_criteria": "skills/lenny-pricing.md exists with: ## The Curriculum (4+ ordered modules with source filenames), ## Key Frameworks Cheat Sheet (5+ real frameworks), ## Source Articles (8+ real filenames), ## Coaching Session Instructions with specific Opening question and mcp__lennysdata__read_content calls. Best For is specific.",
-    "passes": false
+    "passes": true
   },
   {
     "id": "skill-retention",
