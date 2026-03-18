@@ -105,6 +105,6 @@
     "id": "skill-negotiation-comms",
     "goal": "Generate a theme-based coaching journey skill for NEGOTIATION & COMMUNICATION. Search content/index.json for: negotiation, difficult conversation, influence, communicate, feedback, comp, salary, conflict. Read ALL matching articles. Extract key frameworks. Design a 4-6 module coaching journey. Write to skills/lenny-negotiation-comms.md following the skill template in CLAUDE.md. Cross-reference articles, use their own language, cite authors/guests.",
     "exit_criteria": "skills/lenny-negotiation-comms.md exists with: ## The Curriculum (4+ ordered modules with source filenames), ## Key Frameworks Cheat Sheet (4+ real frameworks), ## Source Articles (7+ real filenames), ## Coaching Session Instructions with specific Opening question and mcp__lennysdata__read_content calls.",
-    "passes": false
+    "passes": true
   }
 ]
