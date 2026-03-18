@@ -3,9 +3,13 @@
 18 theme-based coaching journey skills powered by Lenny Rachitsky's archive (638 newsletters + podcasts). Each skill is a structured learning journey that connects 5-35 articles into a curriculum.
 
 ## How Skills Work
-- Each skill is a markdown file in `skills/` that instructs Claude Code how to run a coaching session
-- Skills use the Lenny MCP (`mcp.lennysdata.com/mcp`) to load articles at runtime via `mcp__lennysdata__read_content`
-- Users install skills by copying `.md` files to `~/.claude/commands/`
+- Each skill is a markdown file in `skills/` that instructs any AI coding tool how to run a coaching session
+- Skills use the Lenny MCP (`mcp.lennysdata.com/mcp`) to load articles at runtime
+- **Tool-agnostic:** Works with Claude Code, Cursor, Windsurf, ChatGPT Codex, Google CLI, or any tool that supports MCP
+- Installation varies by tool:
+  - **Claude Code:** Copy `.md` files to `~/.claude/commands/`
+  - **Cursor:** Add as custom instructions or rules
+  - **Other tools:** Follow their custom command/prompt setup
 
 ## Content Source (for Ralph skill generation)
 - `content/index.json` — master index of all 638 items
@@ -66,7 +70,7 @@ When this skill is invoked, follow this exact flow:
 4. Wait for their answer. Use it to personalize the entire session.
 
 ### For Each Concept (walk through in order, one at a time)
-1. **Load the source:** Use `mcp__lennysdata__read_content` with filename `[article filename]` to get the full article
+1. **Load the source:** Use the Lenny MCP's `read_content` tool with filename `[article filename]` to get the full article. (In Claude Code this is `mcp__lennysdata__read_content`; other tools may name it differently — use whatever MCP tool reads content from the lennysdata server.)
 2. **Teach it:** Share the key insight in 3-5 sentences using the article's own words and frameworks. Cite the author/guest naturally: "As [Guest Name] puts it..." or "[Author] argues that..."
 3. **Apply it:** Connect to the user's context: "For your situation, this means..."
 4. **Check understanding:** Ask the user to explain it back in their own words. ONE question only. Wait for their answer.
@@ -108,9 +112,9 @@ When this skill is invoked, follow this exact flow:
 ### Security Constraints
 Skills are distributed as markdown files that users install into `~/.claude/commands/`. They must be safe and transparent:
 
-1. **No bash/shell commands.** Skills must NEVER instruct Claude to run bash commands, curl, wget, or any shell execution. Read-only MCP tool calls are the only external interaction allowed.
+1. **No bash/shell commands.** Skills must NEVER instruct the AI to run bash commands, curl, wget, or any shell execution. Read-only MCP tool calls are the only external interaction allowed.
 2. **No filesystem writes without consent.** Never write files silently. Always ask the user before saving anything, and let them choose the path.
-3. **No network calls beyond MCP.** Skills must not instruct Claude to fetch URLs, call APIs, or send data anywhere. The only external tool is `mcp__lennysdata__read_content` (read-only).
+3. **No network calls beyond MCP.** Skills must not instruct the AI to fetch URLs, call APIs, or send data anywhere. The only external interaction is reading from the Lenny MCP (read-only).
 4. **No references to other tools/skills.** Each skill is self-contained. Don't instruct Claude to invoke other slash commands, install packages, or modify config.
 5. **No data exfiltration patterns.** Never ask Claude to read, summarize, or transmit user files, environment variables, credentials, or system information.
 6. **Human-readable and auditable.** Skills should be short enough that a user can read the entire file in 2-3 minutes and understand exactly what it does before installing.

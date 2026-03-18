@@ -1,16 +1,27 @@
 # Lenny Skills
 
-18 coaching journey skills for [Claude Code](https://claude.ai/code), powered by [Lenny Rachitsky's](https://www.lennysnewsletter.com/) archive of 638 newsletters and podcast interviews.
+18 coaching journey skills for any AI coding tool, powered by [Lenny Rachitsky's](https://www.lennysnewsletter.com/) archive of 638 newsletters and podcast interviews.
 
 Each skill turns a theme (like pricing, retention, or hiring) into a structured 1-on-1 coaching session. Instead of reading 15 articles and hoping you connect the dots, the skill walks you through the key concepts in order, checks your understanding, and applies everything to your specific situation.
 
-**Requires:** [Lenny's Data MCP](https://lennysdata.com) connected to Claude Code.
+**Requires:** [Lenny's Data MCP](https://lennysdata.com) connected to your AI tool.
+
+**Works with:** Claude Code, Cursor, Windsurf, ChatGPT Codex, Google CLI, or any tool that supports MCP.
 
 ## Quick Start
 
-1. Connect the Lenny MCP in Claude Code: `mcp.lennysdata.com/mcp`
-2. Copy any skill file from `skills/` into `~/.claude/commands/`
-3. Run it: `/lenny-pricing` (or whichever theme you want)
+```bash
+git clone https://github.com/erictisme/lenny-skills.git && cd lenny-skills && ./install.sh
+```
+
+That's it. The installer shows you what's being installed, asks you to confirm, and copies the skills to `~/.claude/commands/`. It also reminds you to connect the Lenny MCP.
+
+> **Before running:** These are plain markdown files — no code, no binaries. You can (and should) [read any skill on GitHub](https://github.com/erictisme/lenny-skills/tree/main/skills) before installing, or ask your AI tool to review them for you.
+
+### Other AI Tools (Cursor, Windsurf, Codex, etc.)
+1. Connect the Lenny MCP in your tool's settings
+2. Paste any skill file's content as a prompt or custom instruction
+3. The skill guides the session — it's just markdown
 
 ## The 18 Skills
 
