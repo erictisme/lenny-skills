@@ -93,7 +93,7 @@
     "id": "skill-consumer-business",
     "goal": "Generate a theme-based coaching journey skill for CONSUMER BUSINESS. MUST find and include the entire 'How to kickstart and scale a consumer business' series (Steps 2-6, 5 articles). Also search for: consumer, Duolingo, consumer product, viral consumer, consumer growth. Read ALL matching articles. The curriculum MUST cover all 5 steps of the kickstart series in order. Write to skills/lenny-consumer-business.md following the skill template in CLAUDE.md. Cross-reference articles, use their own language, cite authors/guests.",
     "exit_criteria": "skills/lenny-consumer-business.md exists with: ## The Curriculum (5+ ordered modules covering all 5 steps of the kickstart series), ## Key Frameworks Cheat Sheet (5+ real frameworks), ## Source Articles (5+ real filenames including the kickstart series articles), ## Coaching Session Instructions with specific Opening question and mcp__lennysdata__read_content calls.",
-    "passes": false
+    "passes": true
   },
   {
     "id": "skill-onboarding",

@@ -14,3 +14,4 @@ skill-ai-products: Generated skills/lenny-ai-products.md — 6-module coaching j
 skill-b2b-sales: Generated skills/lenny-b2b-sales.md — 7-module coaching journey from 33 articles. 16 frameworks extracted.
 skill-user-research: Generated skills/lenny-user-research.md — 6-module coaching journey from 7 articles. 8 frameworks extracted.
 skill-seo-content: Generated skills/lenny-seo-content.md — 6-module coaching journey from 7 articles. 7 frameworks extracted.
+skill-consumer-business: Generated skills/lenny-consumer-business.md — 7-module coaching journey from 10 articles. 8 frameworks extracted.
