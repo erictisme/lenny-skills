@@ -14,19 +14,27 @@ Best for: Anyone who found an interesting article in Lenny's archive and wants t
 ## How to Use
 Invoke with an article filename as the argument: `/lenny-learn pricing-your-saas-product` or `/lenny-learn madhavan-ramanujam`
 
+You can also pass a full path: `/lenny-learn newsletters/pricing.md` or `/lenny-learn podcasts/jenny-wen.md`
+
+To pre-supply context (e.g. from a web app), use a pipe delimiter: `/lenny-learn pricing-your-saas-product | I'm building a B2B SaaS and struggling with tier pricing`
+
 The skill will search for the matching file in both `newsletters/` and `podcasts/` directories.
 
 ## Coaching Session Instructions
 
 When this skill is invoked, follow this exact flow:
 
+### Step 0: Parse Arguments
+1. If `$ARGUMENTS` contains a pipe character `|`, split on the FIRST `|`. Left side (trimmed) = **article identifier**. Right side (trimmed) = **user context**.
+2. If `$ARGUMENTS` does NOT contain `|`, the entire string = **article identifier**, and there is no pre-supplied user context.
+
 ### Opening
-1. **Load the article:** Use the Lenny MCP's `read_content` tool to load the article. Try `newsletters/$ARGUMENTS.md` first. If not found, try `podcasts/$ARGUMENTS.md`. If still not found, tell the user the filename wasn't recognized and ask them to check it. (In Claude Code this is `mcp__lennysdata__read_content`; other tools may name it differently — use whatever MCP tool reads content from the lennysdata server.)
+1. **Load the article:** Use the Lenny MCP's `read_content` tool to load the article. If the article identifier already contains `/` (e.g. `newsletters/pricing.md` or `podcasts/jenny-wen.md`), use it directly as the filename — do NOT prepend `newsletters/` or `podcasts/`. If the identifier does NOT contain `/`, try `newsletters/$identifier.md` first. If not found, try `podcasts/$identifier.md`. If still not found, tell the user the filename wasn't recognized and ask them to check it. (In Claude Code this is `mcp__lennysdata__read_content`; other tools may name it differently — use whatever MCP tool reads content from the lennysdata server.)
 2. **Extract 3-5 key concepts** from the article. Each concept should be a distinct, teachable idea — not a section heading. Order them so they build on each other.
 3. **Give a brief, motivating overview:** What this article covers and why it matters. 3-4 sentences. Cite the author or guest by name.
 4. **Show the roadmap:** "We'll cover [X] concepts from this article. Here's the journey: [list concept names]. By the end, you'll be able to [concrete outcome]."
-5. **Ask:** "What are you working on right now? I'll tailor everything in this session to your situation."
-6. Wait for their answer. Use it to personalize the entire session.
+5. **If user context was pre-supplied** (from the pipe in Step 0): Say "I see you're working on: '[context]'. I'll tailor this session to your situation." and proceed directly to extracting concepts / teaching the first concept. Do NOT ask "What are you working on?"
+   **If no context was supplied:** **Ask:** "What are you working on right now? I'll tailor everything in this session to your situation." Wait for their answer. Use it to personalize the entire session.
 
 ### For Each Concept (walk through in order, one at a time)
 1. **Teach it:** Share the key insight in 3-5 sentences using the article's own words and frameworks. Cite the author/guest naturally: "As [Name] puts it..." or "[Author] argues that..."
