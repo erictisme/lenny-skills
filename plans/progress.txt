@@ -6,3 +6,4 @@ skill-growth-loops: Generated skills/lenny-growth-loops.md — 6-module coaching
 skill-product-market-fit: Generated skills/lenny-product-market-fit.md — 6-module coaching journey from 9 articles (2 podcasts, 7 newsletters). 16 frameworks extracted.
 skill-metrics: Generated skills/lenny-metrics.md — 7-module coaching journey from 16 articles (4 podcasts, 12 newsletters). 11 frameworks extracted.
 skill-founder-journey: Generated skills/lenny-founder-journey.md — 7-module coaching journey from 13 articles (5 podcasts, 8 newsletters). 15 frameworks extracted.
+skill-hiring: Generated skills/lenny-hiring.md — 7-module coaching journey from 18 articles (5 podcasts, 13 newsletters). 11 frameworks extracted.
