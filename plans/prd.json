@@ -75,7 +75,7 @@
     "id": "skill-b2b-sales",
     "goal": "Generate a theme-based coaching journey skill for B2B SALES & GTM. Search content/index.json for: sales, enterprise, b2b, pipeline, outbound, go-to-market, first 10 customers, PLG, product-led. Read ALL matching articles. Extract key frameworks. Design a 5-7 module coaching journey. Write to skills/lenny-b2b-sales.md following the skill template in CLAUDE.md. Cross-reference articles, use their own language, cite authors/guests.",
     "exit_criteria": "skills/lenny-b2b-sales.md exists with: ## The Curriculum (5+ ordered modules with source filenames), ## Key Frameworks Cheat Sheet (5+ real frameworks), ## Source Articles (15+ real filenames), ## Coaching Session Instructions with specific Opening question and mcp__lennysdata__read_content calls.",
-    "passes": false
+    "passes": true
   },
   {
     "id": "skill-user-research",
