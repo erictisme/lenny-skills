@@ -14,14 +14,49 @@ Each skill turns a theme (like pricing, retention, or hiring) into a structured 
 git clone https://github.com/erictisme/lenny-skills.git && cd lenny-skills && ./install.sh
 ```
 
-That's it. The installer shows you what's being installed, asks you to confirm, and copies the skills to `~/.claude/commands/`. It also reminds you to connect the Lenny MCP.
+That's it. The installer starts with a guided walkthrough: you pick every CLI you use in one run (Claude, Codex, Cursor, plus portable/custom targets), then it installs the right format for each one.
+
+You can choose the install target during setup:
+- Claude Code: `~/.claude/commands/*.md`
+- Codex slash commands: `~/.codex/imported-claude/commands/<command>/SKILL.md`
+- Cursor skills: `~/.cursor/skills/<skill>/SKILL.md`
+- Portable markdown bundle: `~/.lenny-skills/portable/*.md`
+- Custom directory: choose any path (useful for Antigravity or other CLI tooling)
+  - Markdown format: `lenny-pricing.md`
+  - Skill format: `lenny-pricing/SKILL.md`
 
 > **Before running:** These are plain markdown files — no code, no binaries. You can (and should) [read any skill on GitHub](https://github.com/erictisme/lenny-skills/tree/main/skills) before installing, or ask your AI tool to review them for you.
 
-### Other AI Tools (Cursor, Windsurf, Codex, etc.)
+### Codex
+1. Run `./install.sh` and choose Guided walkthrough (default)
+2. Answer `y` for Codex
+3. Keep other targets on/off as needed
+4. Connect the Lenny MCP in Codex settings: `mcp.lennysdata.com/mcp`
+5. Invoke a skill directly with slash command, e.g. `/lenny-pricing`
+
+### Cursor
+1. Run `./install.sh` and choose Guided walkthrough (default)
+2. Answer `y` for Cursor
+3. Keep other targets on/off as needed
+4. Connect the Lenny MCP in Cursor settings: `mcp.lennysdata.com/mcp`
+5. In chat, ask Cursor to use `lenny-pricing`
+
+### Antigravity / Other CLIs
+1. Run `./install.sh` and choose Guided walkthrough (default)
+2. Answer `y` for custom path
+3. Enter your CLI's command/prompt folder path
+4. Choose format:
+   - Markdown files (`lenny-pricing.md`) for prompt-file workflows
+   - Skill folders (`lenny-pricing/SKILL.md`) for SKILL-style loaders
+5. Connect the Lenny MCP in your tool settings: `mcp.lennysdata.com/mcp`
+
+### Quick Mode (Optional)
+If you already know exactly one target, choose Quick mode in the installer and pick a single option.
+
+### Other AI Tools (Windsurf, etc.)
 1. Connect the Lenny MCP in your tool's settings
-2. Paste any skill file's content as a prompt or custom instruction
-3. The skill guides the session — it's just markdown
+2. Use Guided mode + custom path or portable bundle from `./install.sh`
+3. If your tool has no command loader, paste a skill markdown file directly as prompt/instruction
 
 ## The 19 Skills
 
